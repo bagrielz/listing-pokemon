@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  .pokebola,
+  .theme {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+    @include icon-scale;
+  }
+  button {
+    background: none;
+    border: none;
+  }
+}
