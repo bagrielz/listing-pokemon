@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #5e5b5bad;
+  color: #333333;
+}
+
+// Mixin de escala dos ícones
+@mixin icon-scale {
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
