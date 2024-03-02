@@ -17,10 +17,23 @@ const PokemonList = () => {
 
             <img src={gifs[index]} alt={pokemon.name} />
 
-            <ul className="types">
-              <li className={pokemon.types[0]}>{pokemon.types[0]}</li>
-              <li className={pokemon.types[1]}>{pokemon.types[1]}</li>
-            </ul>
+            {pokemon.types.length >= 1 ? (
+              <ul className="types">
+                {pokemon.types.map((type, index) => (
+                  <li key={index} className={`${type} type-content`}>
+                    {type}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <ul className="type">
+                <li className={`${pokemon.types[0]} type-content`}>
+                  {pokemon.types[0]}
+                </li>
+              </ul>
+            )}
+
+            <p className="description">{pokemon.description}</p>
           </li>
         ))}
       </ul>

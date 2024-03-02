@@ -29,7 +29,7 @@ export const GlobalStorage = ({ children }) => {
     Caterpie,
   ];
 
-  // Informações do pokémon
+  // Informações dos pokémons
   const pokemons = [
     {
       name: "Bulbasaur",
