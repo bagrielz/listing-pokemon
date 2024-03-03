@@ -10,7 +10,7 @@
 
 ## 🔖 Sobre
 
-Essa lista de pokémons foi criada no evento **Dev em Dobro** apenas com HTML, CSS e JavaScript. No intuito de continuar com os meus estudos de ReactJS, escrevi o código do 0 utilizando o framework e para a parte do design o SASS.
+Essa lista de pokémons foi criada no evento **Dev em Dobro** apenas com HTML, CSS e JavaScript. No intuito de continuar com os meus estudos de ReactJS, escrevi o código do zero utilizando o framework e para a parte do design o SASS.
 
 Foi mais difícil do que pensei para construir, mas com pesquisa e relembrando os estudos da **Origamid** cheguei nesse resultado.
 
