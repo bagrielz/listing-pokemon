@@ -22,6 +22,8 @@
   }
   &:hover {
     background: #96d9d6;
+    transform: scale(1.05);
+    cursor: pointer;
   }
   div {
     display: flex;
