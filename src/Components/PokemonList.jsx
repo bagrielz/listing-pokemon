@@ -2,14 +2,16 @@ import React from "react";
 import { GlobalContext } from "../GlobalContext";
 
 const PokemonList = () => {
-  const { pokemons, gifs } = React.useContext(GlobalContext);
-  console.log(pokemons);
+  const { pokemons, gifs, theme } = React.useContext(GlobalContext);
 
   return (
     <main>
       <ul className="pokemon-listing">
         {pokemons.map((pokemon, index) => (
-          <li className="card" key={index}>
+          <li
+            className={`${theme === "light" ? "light" : "dark"} card`}
+            key={index}
+          >
             <div>
               <span>{pokemon.name}</span>
               <span>{pokemon.number}</span>

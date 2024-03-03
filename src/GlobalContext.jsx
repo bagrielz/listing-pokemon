@@ -103,8 +103,14 @@ export const GlobalStorage = ({ children }) => {
     },
   ];
 
+  const [theme, setTheme] = React.useState("light");
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
-    <GlobalContext.Provider value={{ pokemons, gifs }}>
+    <GlobalContext.Provider value={{ pokemons, gifs, theme, toggleTheme }}>
       {children}
     </GlobalContext.Provider>
   );

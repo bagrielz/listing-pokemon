@@ -17,6 +17,9 @@
 
   border-radius: 15px;
   transition: 0.2s ease-in-out;
+  &.dark {
+    background: #a8a8a8;
+  }
   &:hover {
     background: #96d9d6;
   }

@@ -1,9 +1,9 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 25px 60px;
   .pokebola,
-  .theme {
+  .theme-icon {
     width: 30px;
     transition: 0.2s ease-in-out;
     @include icon-scale;

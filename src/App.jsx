@@ -3,16 +3,16 @@ import React from "react";
 // Componentes
 import Header from "./Components/Header";
 import PokemonList from "./Components/PokemonList";
-import { GlobalStorage } from "./GlobalContext";
+import { GlobalContext } from "./GlobalContext";
 
 function App() {
+  const { theme } = React.useContext(GlobalContext);
+
   return (
-    <GlobalStorage>
-      <div className="App">
-        <Header />
-        <PokemonList />
-      </div>
-    </GlobalStorage>
+    <div className={`App ${theme === "light" ? "light" : "dark"}`}>
+      <Header />
+      <PokemonList />
+    </div>
   );
 }
 
